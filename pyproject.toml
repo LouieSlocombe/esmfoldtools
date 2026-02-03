@@ -3,7 +3,7 @@ requires = ["setuptools>=61", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "template_python"
+name = "esmfoldtools"
 version = "0.0.1"
 description = "Template"
 readme = { file = "README.md", content-type = "text/markdown" }
@@ -31,8 +31,8 @@ dev = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/LouieSlocombe/template_python"
-Repository = "https://github.com/LouieSlocombe/template_python"
+Homepage = "https://github.com/LouieSlocombe/esmfoldtools"
+Repository = "https://github.com/LouieSlocombe/esmfoldtools"
 
 [tool.setuptools]
 include-package-data = true

@@ -1,1 +1,3 @@
-# template_python
+# ESMFoldTools
+
+Tools to help run ESMFold calculations.

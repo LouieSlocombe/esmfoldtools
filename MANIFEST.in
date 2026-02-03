@@ -1,2 +1,2 @@
-recursive-include template_python/data *
+recursive-include esmfoldtools/data *
 include README.md
