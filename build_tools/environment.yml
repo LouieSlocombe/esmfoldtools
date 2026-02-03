@@ -1,0 +1,12 @@
+name: esmfoldtools
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python>=3.13
+  - pip
+  - numpy
+  - openmm
+  - pytorch
+  - transformers
+  - pytest
