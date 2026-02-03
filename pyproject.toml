@@ -5,29 +5,33 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "esmfoldtools"
 version = "0.0.1"
-description = "Template"
+description = "Tools to help run ESMFold calculations."
 readme = { file = "README.md", content-type = "text/markdown" }
 requires-python = ">=3.12"
 license = { text = "MIT" }
 
 authors = [
-  { name = "Louie Slocombe", email = "louies@hotmail.co.uk" },
+    { name = "Louie Slocombe", email = "louies@hotmail.co.uk" },
 ]
 
 dependencies = [
-  "numpy",
+    "numpy",
+    "torch",
+    "transformers",
+    "pdbfixer",
+    "openmm",
 ]
 
 classifiers = [
-  "Programming Language :: Python :: 3",
-  "License :: OSI Approved :: MIT License",
-  "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
 ]
 
 [project.optional-dependencies]
 dev = [
-  "pytest",
-  "pytest-cov",
+    "pytest",
+    "pytest-cov",
 ]
 
 [project.urls]
@@ -39,7 +43,7 @@ include-package-data = true
 
 [tool.setuptools.packages.find]
 where = ["."]
-include = ["template_python", "template_python.*"]
+include = ["esmfoldtools", "esmfoldtools.*"]
 
 [tool.setuptools.package-data]
-"template_python" = ["data/*"]
+"esmfoldtools" = ["data/*"]
