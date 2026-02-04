@@ -57,6 +57,9 @@ def fold_sequence_esm(sequence: str, fileout: str | None = None) -> tuple[str, n
         "facebook/esmfold_v1",
         low_cpu_mem_usage=True,
     ).to(device).eval()
+    model.esm = model.esm.half()
+    torch.backends.cuda.matmul.allow_tf32 = True
+    model.trunk.set_chunk_size(64)
 
     inputs = tok([sequence],
                  return_tensors="pt",
